@@ -1,0 +1,21 @@
+$blue : #72bcd4;
+.detail{
+  text-align: center;
+}
+.main{
+  margin-top: .625rem;
+  border: 1px solid #ccc;
+  display: inline-block;
+  text-align: left;
+}
+.items{
+  padding: .625rem;
+}
+h4{
+  color: $blue;
+  text-transform: capitalize;
+}
+.icon-content{
+  text-align: right;
+  color: $blue;
+}

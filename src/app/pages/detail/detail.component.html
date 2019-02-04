@@ -1,0 +1,25 @@
+<div *ngIf="apartmentDetail" class="detail">
+  <div class="main">
+    <img [src]="apartmentDetail.teaserImageUrl">
+    <div class="items">
+      <h4>{{apartmentDetail.title}}</h4>
+      <h5 class="address">
+        {{apartmentDetail.address.streetName}} {{apartmentDetail.address.houseNumber}}
+        {{apartmentDetail.address.postalCode}} {{apartmentDetail.address.city}}<br>
+        {{apartmentDetail.address.neighborhood}}
+      </h5>
+      <div class="row">
+        <div class="col-md-6">{{apartmentDetail.details?.numberOfRooms}} rooms</div>
+        <div class="col-md-6">{{apartmentDetail.details?.size}} sqm</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">floor {{apartmentDetail.details?.floor}}</div>
+        <div class="col-md-6">price {{apartmentDetail.details?.rent?.totalRent}}</div>
+      </div>
+      <div class="icon-content">
+        <img src="../../../assets/img/baseline-star_rate-18px.svg" />
+        <img src="../../../assets/img/baseline-mail_outline-24px.svg" />
+      </div>
+    </div>
+  </div>
+</div>
